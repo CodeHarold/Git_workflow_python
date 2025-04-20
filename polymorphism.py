@@ -18,6 +18,10 @@ class Fish(Animal):
     def speak(self):
         return "Blub!"
 
+class Cow(Animal):
+    def speak(self):
+        return "Moo!"
+       
 
     
 def animal_sound(animal: Animal):
@@ -28,9 +32,12 @@ dog = Dog()
 cat = Cat()
 bird = Bird()
 fish = Fish()
+cow = Cow()
 
 
 animal_sound(dog)  # Output: Woof!
 animal_sound(cat)  # Output: Meow!
 animal_sound(bird)  # Output: Chirp!
 animal_sound(Fish())  # Output: Blub!
+animal_sound(cow)  # Output: Moo!
+
